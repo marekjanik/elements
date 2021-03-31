@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 339px;
+  height: 39px;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+  padding: 4px 2px;
+}
+
+.input-icon {
+  margin-right: 20px;
+  margin-left: 16px;
+}
+
+.input-field {
+  height: 100%;
+  border: none;
+  border-left: 1px solid #dedede;
+  padding-left: 20px;
+}
+
+.input-field::placeholder {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #afafaf;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.focus {
+  box-shadow: 0 0 0 3px rgba(58, 154, 0, 0.5);
+}
