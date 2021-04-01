@@ -22,7 +22,7 @@ body {
   border: 1px solid #afafaf;
   border-radius: 3px;
   padding: 4px 2px;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
 }
 
 .icon-container {
@@ -43,7 +43,7 @@ body {
   border: none;
   border-left: 1px solid #dedede;
   padding-left: 20px;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   font-family: "Titillium Web", sans-serif;
   font-size: 16px;
   font-weight: 400;
