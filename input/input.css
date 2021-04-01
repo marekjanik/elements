@@ -38,11 +38,16 @@ body {
 }
 
 .input-field {
+  width: 80%;
   height: 100%;
   border: none;
   border-left: 1px solid #dedede;
   padding-left: 20px;
   background-color: #f7f7f7;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #afafaf;
 }
 
 .input-field::placeholder {
