@@ -25,6 +25,13 @@ body {
   background-color: #f7f7f7;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+}
+
 .input-icon {
   margin-right: 20px;
   margin-left: 16px;
