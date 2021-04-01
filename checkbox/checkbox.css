@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-.input-container {
+.checkbox-container {
   display: block;
   position: relative;
   font-family: "Titillium Web", sans-serif;
@@ -24,7 +24,7 @@ body {
   padding-left: 37px;
 }
 
-.input {
+.checkbox {
   position: absolute;
   height: 0;
   width: 0;
@@ -43,7 +43,7 @@ body {
   border-radius: 3px;
 }
 
-.input-container:hover .input ~ .checkmark {
+.checkbox-container:hover .checkbox ~ .checkmark {
   background-color: #eee;
 }
 
@@ -60,6 +60,6 @@ body {
   display: block;
 }
 
-.input:checked ~ .checkmark::after {
+.checkbox:checked ~ .checkmark::after {
   display: none;
 }
