@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/input/input.css" />
+    <link rel="stylesheet" href="/checkbox/checkbox.css" />
+    <link rel="stylesheet" href="/button/button.css" />
+    <link rel="stylesheet" href="register-form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1 class="form-name">Register Form</h1>
+
+      <div class="form-content">
+        <div class="input-container">
+          <div class="icon-container">
+            <img src="img/user.png" alt="input-icon" class="input-icon" />
+          </div>
+          <input type="text" class="input-field" placeholder="Username" />
+        </div>
+
+        <div class="input-container">
+          <div class="icon-container">
+            <img src="img/lock.png" alt="input-icon" class="input-icon" />
+          </div>
+          <input type="password" class="input-field" placeholder="Password" />
+        </div>
+
+        <div class="input-container">
+          <div class="icon-container">
+            <img src="img/lock.png" alt="input-icon" class="input-icon" />
+          </div>
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Confirm Password"
+          />
+        </div>
+
+        <div class="input-container">
+          <div class="icon-container">
+            <img src="img/envelope.png" alt="input-icon" class="input-icon" />
+          </div>
+          <input type="email" class="input-field" placeholder="Email" />
+        </div>
+
+        <div class="input-container">
+          <div class="icon-container">
+            <img src="img/maps.png" alt="input-icon" class="input-icon" />
+          </div>
+          <select class="input-field">
+            <option value="Your Location">Your Location</option>
+            <option value="Wroclaw">Wroclaw</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Sydney">Sydney</option>
+          </select>
+        </div>
+
+        <label class="checkbox-container"
+          >I have read and accept the terms of use.
+          <input class="checkbox" type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <button class="btn">Sign up</button>
+      </div>
+    </div>
+
+    <script src="/input/input.js"></script>
+  </body>
+</html>
