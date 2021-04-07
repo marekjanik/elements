@@ -1,8 +1,8 @@
 "use strict";
 
-const input = document.querySelectorAll(".input-container");
-
 function focus() {
+  const input = document.querySelectorAll(".input-container");
+
   document.addEventListener("click", function (e) {
     for (let i = 0; i < input.length; i++) {
       if (input[i].contains(e.target)) {
