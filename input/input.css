@@ -64,3 +64,13 @@ body {
 .focus {
   box-shadow: 0 0 0 3px rgba(58, 154, 0, 0.5);
 }
+
+@media only screen and (max-width: 600px) {
+  .input-container {
+    width: 224px;
+  }
+
+  .icon-container {
+    width: 38px;
+  }
+}
