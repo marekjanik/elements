@@ -30,6 +30,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 58px;
+  height: 100%;
+  border-right: 1px solid #dedede;
 }
 
 .input-icon {
@@ -41,7 +43,6 @@ body {
   width: 80%;
   height: 100%;
   border: none;
-  border-left: 1px solid #dedede;
   padding-left: 20px;
   background-color: #fafafa;
   font-family: "Titillium Web", sans-serif;
