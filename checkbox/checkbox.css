@@ -38,8 +38,8 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  height: 23px;
-  width: 23px;
+  height: 24px;
+  width: 24px;
   background-color: #fafafa;
   border: 1px solid #afafaf;
   border-radius: 3px;
@@ -59,11 +59,11 @@ body {
   height: 12px;
   background-image: linear-gradient(0deg, #7ec31f, #a2d73f);
   border-radius: 3px;
-  display: block;
+  display: none;
 }
 
 .checkbox:checked ~ .checkmark::after {
-  display: none;
+  display: block;
 }
 
 @media only screen and (max-width: 600px) {
