@@ -27,10 +27,16 @@ body {
 
 .checkbox {
   position: absolute;
+  top: 0;
+  left: 0;
   height: 0;
   width: 0;
   opacity: 0;
   cursor: pointer;
+}
+
+.checkbox:focus ~ .checkmark {
+  box-shadow: 0 0 3pt 2pt rgba(58, 154, 0, 0.5);
 }
 
 .checkmark {

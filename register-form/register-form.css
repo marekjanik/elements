@@ -81,9 +81,26 @@ body {
   z-index: -1;
 }
 
+.select:focus {
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  width: 339px;
+  height: 39px;
+  border-radius: 3px;
+  padding-left: 30%;
+  box-shadow: 0 0 3pt 2pt rgba(58, 154, 0, 0.5);
+}
+
 @media only screen and (max-width: 600px) {
   .form-content {
     margin: 0 auto;
     width: 250px;
+  }
+
+  .select:focus {
+    right: -9px;
+    width: 224px;
+    padding-left: 34.3%;
   }
 }

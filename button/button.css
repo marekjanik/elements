@@ -35,7 +35,7 @@ body {
 .btn:focus,
 .btn:active {
   outline: 0;
-  box-shadow: none;
+  box-shadow: 0 0 3pt 2pt rgba(58, 154, 0, 0.5);
   -webkit-tap-highlight-color: transparent;
 }
 
