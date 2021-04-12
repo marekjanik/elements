@@ -14,7 +14,12 @@
     <div class="form-container">
       <h1 class="form-name">Register Form</h1>
 
-      <form action="/action_page.php" class="form-content">
+      <form
+        action="/action_page.php"
+        class="form-content"
+        name="form"
+        onsubmit="return(validate());"
+      >
         <div class="input-container">
           <div class="icon-container">
             <img src="img/user.png" alt="input-icon" class="input-icon" />
@@ -23,7 +28,7 @@
             type="text"
             class="input-field"
             placeholder="Username"
-            required
+            name="name"
           />
         </div>
 
@@ -35,7 +40,7 @@
             type="password"
             class="input-field"
             placeholder="Password"
-            required
+            name="password"
           />
         </div>
 
@@ -47,7 +52,7 @@
             type="password"
             class="input-field"
             placeholder="Confirm Password"
-            required
+            name="confirm"
           />
         </div>
 
@@ -59,7 +64,7 @@
             type="email"
             class="input-field"
             placeholder="Email"
-            required
+            name="email"
           />
         </div>
 
@@ -86,5 +91,7 @@
         <button type="submit" class="btn">Sign up</button>
       </form>
     </div>
+
+    <script src="register-form.js"></script>
   </body>
 </html>
