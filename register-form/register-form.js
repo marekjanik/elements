@@ -32,7 +32,7 @@ function validate() {
     confirmation.placeholder = "Password is required.";
     confirmation.classList.add("error");
     document.addEventListener("click", function () {
-      confirmation.placeholder = "Password";
+      confirmation.placeholder = "Confirm Password";
       confirmation.classList.remove("error");
     });
     confirmation.focus();
@@ -43,7 +43,7 @@ function validate() {
     email.placeholder = "Email is required.";
     email.classList.add("error");
     document.addEventListener("click", function () {
-      email.placeholder = "Password";
+      email.placeholder = "Email";
       email.classList.remove("error");
     });
     email.focus();
