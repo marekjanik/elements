@@ -15,6 +15,12 @@ function validate() {
     });
     username.focus();
     return false;
+  } else {
+    if (username.value.length < 6) {
+      username.classList.add("error");
+      username.focus();
+      return false;
+    }
   }
 
   if (password.value === "") {
