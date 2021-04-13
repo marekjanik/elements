@@ -26,6 +26,12 @@ function validate() {
     });
     password.focus();
     return false;
+  } else {
+    if (password.value.length < 6) {
+      password.classList.add("error");
+      password.focus();
+      return false;
+    }
   }
 
   if (confirmation.value === "") {
