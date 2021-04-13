@@ -43,6 +43,12 @@ function validate() {
     });
     confirmation.focus();
     return false;
+  } else {
+    if (confirmation.value !== password.value) {
+      confirmation.classList.add("error");
+      confirmation.focus();
+      return false;
+    }
   }
 
   if (email.value === "") {
