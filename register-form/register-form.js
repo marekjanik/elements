@@ -18,35 +18,35 @@ function validate() {
   }
 
   if (password.value === "") {
-    document.form.password.placeholder = "Password is required.";
-    document.form.password.classList.add("error");
+    password.placeholder = "Password is required.";
+    password.classList.add("error");
     document.addEventListener("click", function () {
-      document.form.password.placeholder = "Password";
-      document.form.password.classList.remove("error");
+      password.placeholder = "Password";
+      password.classList.remove("error");
     });
-    document.form.password.focus();
+    password.focus();
     return false;
   }
 
   if (confirmation.value === "") {
-    document.form.confirm.placeholder = "Password is required.";
-    document.form.confirm.classList.add("error");
+    confirmation.placeholder = "Password is required.";
+    confirmation.classList.add("error");
     document.addEventListener("click", function () {
-      document.form.confirm.placeholder = "Password";
-      document.form.confirm.classList.remove("error");
+      confirmation.placeholder = "Password";
+      confirmation.classList.remove("error");
     });
-    document.form.confirm.focus();
+    confirmation.focus();
     return false;
   }
 
   if (email.value === "") {
-    document.form.email.placeholder = "Email is required.";
-    document.form.email.classList.add("error");
+    email.placeholder = "Email is required.";
+    email.classList.add("error");
     document.addEventListener("click", function () {
-      document.form.email.placeholder = "Password";
-      document.form.email.classList.remove("error");
+      email.placeholder = "Password";
+      email.classList.remove("error");
     });
-    document.form.email.focus();
+    email.focus();
     return false;
   }
   return true;
