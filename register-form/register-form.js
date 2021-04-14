@@ -4,6 +4,7 @@ const username = document.form.name;
 const password = document.form.password;
 const confirmation = document.form.confirm;
 const email = document.form.email;
+const checkbox = document.form.checkbox;
 
 const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
@@ -74,6 +75,15 @@ function validate() {
       email.focus();
       return false;
     }
+  }
+
+  if (!checkbox.checked) {
+    checkbox.classList.add("error");
+    checkbox.focus();
+    document.addEventListener("click", () => {
+      checkbox.classList.remove("error");
+    });
+    return false;
   }
   return true;
 }
