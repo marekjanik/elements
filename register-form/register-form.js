@@ -5,6 +5,8 @@ const password = document.form.password;
 const confirmation = document.form.confirm;
 const email = document.form.email;
 
+const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
 function validate() {
   if (username.value === "") {
     username.placeholder = "Username is required.";
@@ -66,6 +68,12 @@ function validate() {
     });
     email.focus();
     return false;
+  } else {
+    if (!email.value.match(pattern)) {
+      email.classList.add("error");
+      email.focus();
+      return false;
+    }
   }
   return true;
 }
@@ -86,5 +94,17 @@ function validatePassword() {
   }
 }
 
+function validateEmail() {
+  if (!email.value.match(pattern)) {
+    email.classList.add("error");
+    document.addEventListener("click", () => {
+      email.classList.remove("error");
+    });
+  } else {
+    email.classList.remove("error");
+  }
+}
+
 username.addEventListener("input", validateUsername);
 password.addEventListener("input", validatePassword);
+email.addEventListener("input", validateEmail);
