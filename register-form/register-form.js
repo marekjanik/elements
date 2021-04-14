@@ -94,6 +94,14 @@ function validatePassword() {
   }
 }
 
+function validateConfirmation() {
+  if (confirmation.value !== password.value) {
+    confirmation.classList.add("error");
+  } else {
+    confirmation.classList.remove("error");
+  }
+}
+
 function validateEmail() {
   if (!email.value.match(pattern)) {
     email.classList.add("error");
@@ -107,4 +115,5 @@ function validateEmail() {
 
 username.addEventListener("input", validateUsername);
 password.addEventListener("input", validatePassword);
+confirmation.addEventListener("input", validateConfirmation);
 email.addEventListener("input", validateEmail);
