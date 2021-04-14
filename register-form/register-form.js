@@ -69,3 +69,13 @@ function validate() {
   }
   return true;
 }
+
+function validateUsername() {
+  if (username.value.length > 0 && username.value.length < 6) {
+    username.classList.add("error");
+  } else {
+    username.classList.remove("error");
+  }
+}
+
+username.addEventListener("input", validateUsername);
