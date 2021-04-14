@@ -78,4 +78,13 @@ function validateUsername() {
   }
 }
 
+function validatePassword() {
+  if (password.value.length > 0 && password.value.length < 6) {
+    password.classList.add("error");
+  } else {
+    password.classList.remove("error");
+  }
+}
+
 username.addEventListener("input", validateUsername);
+password.addEventListener("input", validatePassword);
